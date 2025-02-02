@@ -31,11 +31,11 @@ test: fmt wire
 
 .PHONY: swag-front
 swag-front:
-	swag init -g ./front.go -d ./internal/app/serve/front -o ./doc/front  --instanceName front
+	swag init -g ./front.go -d ./internal/app/serve/front -o ./api/front  --instanceName front
 
 .PHONY: swag-admin
 swag-admin:
-	swag init -g ./admin.go -d ./internal/app/serve/admin -o ./doc/admin  --instanceName admin
+	swag init -g ./admin.go -d ./internal/app/serve/admin -o ./api/admin  --instanceName admin
 
 .PHONY: swag-all
 swag-all: swag-front swag-admin
