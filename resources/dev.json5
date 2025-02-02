@@ -1,0 +1,19 @@
+{
+  "pg": {
+    // pg数据库配置
+    "user": "1",
+    "password": "1",
+    "host": "1",
+    "port": "1",
+    "database": "1"
+  },
+  "redis": {
+    // redis配置
+    "addr": "1",
+    "username": "1",
+    "password": "1",
+    "db": 2,
+    "pool": 10,
+    "name": "1",
+  },
+}
