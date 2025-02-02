@@ -11,8 +11,8 @@ import (
 )
 
 const (
-	SessionName = "web-session-front"
-	SessionSalt = "!FrOn)t.XDyki&*DP]Lh6KqY9s8"
+	sessionName = "web-session-front"
+	sessionSalt = "!FrOn)t.XDyki&*DP]Lh6KqY9s8"
 )
 
 // App 消费者端API
@@ -31,7 +31,7 @@ func (p *App) Run(rg gin.IRouter) {
 		c.InstanceName = "front"
 	}))
 
-	rg.Use(gi.MidCookieSession(SessionName, SessionSalt, p.sessionOpt()))
+	rg.Use(gi.MidCookieSession(sessionName, sessionSalt, p.sessionOpt()))
 	p.Hdl.Mount(rg)
 }
 

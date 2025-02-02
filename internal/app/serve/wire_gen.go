@@ -58,9 +58,7 @@ func New() (*App, func(), error) {
 		Hdl: hdlHdl,
 	}
 	mid3 := &mid2.Mid{}
-	hdlBase := hdl2.Base{
-		Mid: mid3,
-	}
+	hdlBase := hdl2.Base{}
 	hdlPubHdl := &hdl2.PubHdl{
 		Base: hdlBase,
 	}

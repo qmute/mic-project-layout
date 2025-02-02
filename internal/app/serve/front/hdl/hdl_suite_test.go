@@ -10,7 +10,6 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 	"github.com/qmute/gi"
-	"github.com/qmute/mic-project-layout/internal/app/serve/front"
 	"github.com/qmute/mic-project-layout/internal/app/serve/front/hdl"
 	"github.com/qmute/mic-project-layout/internal/app/serve/front/hdl/mid"
 	"github.com/qmute/mic-project-layout/internal/domain"
@@ -53,8 +52,10 @@ var _ = BeforeEach(func() {
 
 	router = gi.New()
 
+	router.Use()
+
 	router.Use(
-		gi.MidCookieSession(front.SessionName, front.SessionSalt, sessions.Options{
+		gi.MidCookieSession("web-session-front", "web-session-front-secret", sessions.Options{
 			Path:   "/",
 			MaxAge: 86400 * 7,
 		}),

@@ -9,7 +9,6 @@ import (
 	. "github.com/onsi/gomega"
 	"github.com/qmute/gi"
 	"github.com/qmute/mic-project-layout/internal/app/serve/admin/hdl"
-	"github.com/qmute/mic-project-layout/internal/app/serve/admin/hdl/mid"
 	"github.com/qmute/mic-project-layout/pkg/ut"
 	"go.uber.org/mock/gomock"
 )
@@ -32,16 +31,14 @@ var _ = BeforeEach(func() {
 	ctl = gomock.NewController(GinkgoT())
 	cleaner = ctl.Finish
 
-	base = hdl.Base{
-		Mid: &mid.Mid{},
-	}
+	base = hdl.Base{}
 
 	gin.SetMode(gin.TestMode)
 
 	router = gi.New()
 
-	router.Use(gi.MidCookieSession("web-session-cinema", "web-session-cinema-secret", sessions.Options{
-		Path:   "/api/admin",
+	router.Use(gi.MidCookieSession("web-session-admin", "web-session-admin-secret", sessions.Options{
+		Path:   "/",
 		MaxAge: 86400 * 7,
 	}))
 
