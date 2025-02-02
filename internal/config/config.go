@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"os"
 
-	"easyslip.cc/mic-project-layout/internal/database"
-	"easyslip.cc/mic-project-layout/pkg/ut"
 	"github.com/pkg/errors"
+	"github.com/qmute/mic-project-layout/internal/database"
+	"github.com/qmute/mic-project-layout/pkg/ut"
 	"github.com/tidwall/jsonc"
 )
 

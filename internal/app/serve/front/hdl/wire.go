@@ -1,8 +1,8 @@
 package hdl
 
 import (
-	"easyslip.cc/mic-project-layout/internal/app/serve/front/hdl/mid"
 	"github.com/google/wire"
+	"github.com/qmute/mic-project-layout/internal/app/serve/front/hdl/mid"
 )
 
 var Set = wire.NewSet(

@@ -1,8 +1,8 @@
 package hdl
 
 import (
-	"easyslip.cc/mic-project-layout/internal/app/serve/admin/hdl/mid"
 	"github.com/gin-gonic/gin"
+	"github.com/qmute/mic-project-layout/internal/app/serve/admin/hdl/mid"
 )
 
 type Hdl struct {

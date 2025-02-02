@@ -3,9 +3,9 @@ package types_test
 import (
 	"strings"
 
-	"easyslip.cc/mic-project-layout/pkg/types"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
+	"github.com/qmute/mic-project-layout/pkg/types"
 )
 
 var _ = Describe("Month", func() {

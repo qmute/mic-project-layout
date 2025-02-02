@@ -1,11 +1,11 @@
 package boot
 
 import (
-	"easyslip.cc/mic-project-layout/internal/config"
-	"easyslip.cc/mic-project-layout/internal/database"
-	repoImpl "easyslip.cc/mic-project-layout/internal/repo/impl"
-	srvImpl "easyslip.cc/mic-project-layout/internal/service/impl"
 	"github.com/google/wire"
+	"github.com/qmute/mic-project-layout/internal/config"
+	"github.com/qmute/mic-project-layout/internal/database"
+	repoImpl "github.com/qmute/mic-project-layout/internal/repo/impl"
+	srvImpl "github.com/qmute/mic-project-layout/internal/service/impl"
 	"github.com/qmute/mic/v4"
 )
 

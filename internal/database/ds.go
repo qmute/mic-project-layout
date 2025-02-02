@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"easyslip.cc/mic-project-layout/pkg/ut"
+	"github.com/qmute/mic-project-layout/pkg/ut"
 	"github.com/sirupsen/logrus"
 	"gorm.io/gorm/logger"
 

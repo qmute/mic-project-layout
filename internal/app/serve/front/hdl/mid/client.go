@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"strings"
 
-	"easyslip.cc/mic-project-layout/internal/domain"
 	"github.com/gin-gonic/gin"
+	"github.com/qmute/mic-project-layout/internal/domain"
 	log "github.com/sirupsen/logrus"
 )
 

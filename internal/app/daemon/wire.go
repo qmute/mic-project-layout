@@ -4,9 +4,9 @@
 package daemon
 
 import (
-	"easyslip.cc/mic-project-layout/internal/app/daemon/internal/daemon"
-	"easyslip.cc/mic-project-layout/internal/boot"
 	"github.com/google/wire"
+	"github.com/qmute/mic-project-layout/internal/app/daemon/internal/daemon"
+	"github.com/qmute/mic-project-layout/internal/boot"
 )
 
 func New() (*App, func(), error) {

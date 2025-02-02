@@ -1,6 +1,6 @@
 package testdata
 
-import "easyslip.cc/mic-project-layout/internal/domain"
+import "github.com/qmute/mic-project-layout/internal/domain"
 
 func ClientInfo(ctype domain.ClientType, versions ...string) *domain.ClientInfo {
 	ver := "v1.0.0"

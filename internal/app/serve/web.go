@@ -7,12 +7,12 @@ import (
 	"net/url"
 	"strings"
 
-	"easyslip.cc/mic-project-layout/internal/app/serve/admin"
-	"easyslip.cc/mic-project-layout/internal/app/serve/front"
-	"easyslip.cc/mic-project-layout/internal/config"
 	"github.com/gin-gonic/gin"
 	"github.com/pkg/errors"
 	"github.com/qmute/gi"
+	"github.com/qmute/mic-project-layout/internal/app/serve/admin"
+	"github.com/qmute/mic-project-layout/internal/app/serve/front"
+	"github.com/qmute/mic-project-layout/internal/config"
 	"github.com/samber/lo"
 	log "github.com/sirupsen/logrus"
 )

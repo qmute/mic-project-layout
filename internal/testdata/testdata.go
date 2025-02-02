@@ -1,6 +1,6 @@
 package testdata
 
-import "easyslip.cc/mic-project-layout/pkg/types"
+import "github.com/qmute/mic-project-layout/pkg/types"
 
 func getId[T any](id ...T) T {
 	if len(id) == 0 {

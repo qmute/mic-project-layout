@@ -7,14 +7,14 @@
 package serve
 
 import (
-	"easyslip.cc/mic-project-layout/internal/app/serve/admin"
-	hdl2 "easyslip.cc/mic-project-layout/internal/app/serve/admin/hdl"
-	mid2 "easyslip.cc/mic-project-layout/internal/app/serve/admin/hdl/mid"
-	"easyslip.cc/mic-project-layout/internal/app/serve/front"
-	"easyslip.cc/mic-project-layout/internal/app/serve/front/hdl"
-	"easyslip.cc/mic-project-layout/internal/app/serve/front/hdl/mid"
-	"easyslip.cc/mic-project-layout/internal/boot"
-	"easyslip.cc/mic-project-layout/internal/config"
+	"github.com/qmute/mic-project-layout/internal/app/serve/admin"
+	hdl2 "github.com/qmute/mic-project-layout/internal/app/serve/admin/hdl"
+	mid2 "github.com/qmute/mic-project-layout/internal/app/serve/admin/hdl/mid"
+	"github.com/qmute/mic-project-layout/internal/app/serve/front"
+	"github.com/qmute/mic-project-layout/internal/app/serve/front/hdl"
+	"github.com/qmute/mic-project-layout/internal/app/serve/front/hdl/mid"
+	"github.com/qmute/mic-project-layout/internal/boot"
+	"github.com/qmute/mic-project-layout/internal/config"
 	"github.com/qmute/mic/v4"
 )
 

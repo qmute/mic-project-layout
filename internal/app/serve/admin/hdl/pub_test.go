@@ -1,10 +1,10 @@
 package hdl_test
 
 import (
-	"easyslip.cc/mic-project-layout/internal/app/serve/admin/hdl"
-	"easyslip.cc/mic-project-layout/pkg/ut"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
+	"github.com/qmute/mic-project-layout/internal/app/serve/admin/hdl"
+	"github.com/qmute/mic-project-layout/pkg/ut"
 )
 
 var _ = Describe("Pub", func() {

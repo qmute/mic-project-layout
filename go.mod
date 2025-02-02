@@ -1,4 +1,4 @@
-module easyslip.cc/mic-project-layout
+module github.com/qmute/mic-project-layout
 
 go 1.23.5
 

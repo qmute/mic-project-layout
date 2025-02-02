@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"easyslip.cc/mic-project-layout/pkg/ut"
 	"github.com/pkg/errors"
+	"github.com/qmute/mic-project-layout/pkg/ut"
 	"github.com/quexer/utee"
 	"github.com/redis/go-redis/v9"
 	log "github.com/sirupsen/logrus"

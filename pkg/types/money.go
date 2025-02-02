@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"easyslip.cc/mic-project-layout/pkg/ut"
+	"github.com/qmute/mic-project-layout/pkg/ut"
 	"golang.org/x/text/language"
 	"golang.org/x/text/message"
 )

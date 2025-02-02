@@ -3,14 +3,14 @@ package hdl_test
 import (
 	"testing"
 
-	"easyslip.cc/mic-project-layout/internal/app/serve/admin/hdl"
-	"easyslip.cc/mic-project-layout/internal/app/serve/admin/hdl/mid"
-	"easyslip.cc/mic-project-layout/pkg/ut"
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 	"github.com/qmute/gi"
+	"github.com/qmute/mic-project-layout/internal/app/serve/admin/hdl"
+	"github.com/qmute/mic-project-layout/internal/app/serve/admin/hdl/mid"
+	"github.com/qmute/mic-project-layout/pkg/ut"
 	"go.uber.org/mock/gomock"
 )
 

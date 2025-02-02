@@ -3,8 +3,8 @@ package database_test
 import (
 	"context"
 
-	"easyslip.cc/mic-project-layout/internal/database"
 	"github.com/pkg/errors"
+	"github.com/qmute/mic-project-layout/internal/database"
 	"github.com/redis/go-redis/v9"
 
 	. "github.com/onsi/ginkgo/v2"

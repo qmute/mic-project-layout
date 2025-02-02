@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"easyslip.cc/mic-project-layout/internal/app/serve"
+	"github.com/qmute/mic-project-layout/internal/app/serve"
 	"github.com/quexer/utee"
 	"github.com/spf13/cobra"
 )

@@ -1,8 +1,8 @@
 package boot
 
 import (
-	"easyslip.cc/mic-project-layout/internal/config"
-	"easyslip.cc/mic-project-layout/internal/database"
+	"github.com/qmute/mic-project-layout/internal/config"
+	"github.com/qmute/mic-project-layout/internal/database"
 	micConifg "go-micro.dev/v4/config"
 )
 

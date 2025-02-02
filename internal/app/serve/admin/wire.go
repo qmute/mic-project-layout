@@ -1,8 +1,8 @@
 package admin
 
 import (
-	"easyslip.cc/mic-project-layout/internal/app/serve/admin/hdl"
 	"github.com/google/wire"
+	"github.com/qmute/mic-project-layout/internal/app/serve/admin/hdl"
 )
 
 var Set = wire.NewSet(

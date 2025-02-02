@@ -1,8 +1,8 @@
 package impl
 
 import (
-	"easyslip.cc/mic-project-layout/internal/repo"
 	"github.com/google/wire"
+	"github.com/qmute/mic-project-layout/internal/repo"
 )
 
 var Set = wire.NewSet(

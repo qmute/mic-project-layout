@@ -1,8 +1,8 @@
 package domain
 
 import (
-	"easyslip.cc/mic-project-layout/pkg/ut"
 	"github.com/pkg/errors"
+	"github.com/qmute/mic-project-layout/pkg/ut"
 )
 
 const (

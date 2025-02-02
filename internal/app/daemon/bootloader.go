@@ -3,8 +3,8 @@ package daemon
 import (
 	"context"
 
-	"easyslip.cc/mic-project-layout/internal/app/daemon/internal/daemon"
-	"easyslip.cc/mic-project-layout/internal/boot"
+	"github.com/qmute/mic-project-layout/internal/app/daemon/internal/daemon"
+	"github.com/qmute/mic-project-layout/internal/boot"
 	"github.com/qmute/mic/v4"
 )
 

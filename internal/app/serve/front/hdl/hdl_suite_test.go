@@ -5,17 +5,17 @@ import (
 	"net/http"
 	"testing"
 
-	"easyslip.cc/mic-project-layout/internal/app/serve/front"
-	"easyslip.cc/mic-project-layout/internal/app/serve/front/hdl"
-	"easyslip.cc/mic-project-layout/internal/app/serve/front/hdl/mid"
-	"easyslip.cc/mic-project-layout/internal/domain"
-	"easyslip.cc/mic-project-layout/internal/testdata"
-	"easyslip.cc/mic-project-layout/pkg/ut"
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 	"github.com/qmute/gi"
+	"github.com/qmute/mic-project-layout/internal/app/serve/front"
+	"github.com/qmute/mic-project-layout/internal/app/serve/front/hdl"
+	"github.com/qmute/mic-project-layout/internal/app/serve/front/hdl/mid"
+	"github.com/qmute/mic-project-layout/internal/domain"
+	"github.com/qmute/mic-project-layout/internal/testdata"
+	"github.com/qmute/mic-project-layout/pkg/ut"
 	"go.uber.org/mock/gomock"
 )
 

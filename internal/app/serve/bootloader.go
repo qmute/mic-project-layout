@@ -3,7 +3,7 @@ package serve
 import (
 	"context"
 
-	"easyslip.cc/mic-project-layout/internal/boot"
+	"github.com/qmute/mic-project-layout/internal/boot"
 	"github.com/qmute/mic/v4"
 )
 

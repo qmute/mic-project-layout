@@ -1,10 +1,10 @@
 package admin
 
 import (
-	"easyslip.cc/mic-project-layout/internal/app/serve/admin/hdl"
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"
 	"github.com/qmute/gi"
+	"github.com/qmute/mic-project-layout/internal/app/serve/admin/hdl"
 
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
