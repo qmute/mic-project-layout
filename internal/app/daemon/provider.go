@@ -8,7 +8,7 @@ import (
 	"go-micro.dev/v4/config"
 )
 
-func defaultMicDaemonOpt(conf config.Config) mic.Opt {
+func defaultMicDaemonOpt(_ config.Config) mic.Opt {
 	return mic.Opt{
 		Name:           "mic-project-layout.srv.daemon",
 		Version:        mic.BuildVersion("1.0.0"),

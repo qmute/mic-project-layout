@@ -7,8 +7,7 @@ import (
 )
 
 const (
-	MonthLayout  = "200601"
-	patternMonth = `^\d{6}$`
+	MonthLayout = "200601"
 )
 
 func MonthFromTime(t time.Time) Month {

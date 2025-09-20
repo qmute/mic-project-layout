@@ -53,7 +53,7 @@ func (p *App) startLog() error {
 func (p *App) beforeStart() error {
 	p.MicroWebService.Handle("/debug/", http.DefaultServeMux)
 	p.MicroWebService.HandleFunc("/v", func(writer http.ResponseWriter, request *http.Request) {
-		writer.Write([]byte(p.MicroWebService.Options().Version))
+		_, _ = writer.Write([]byte(p.MicroWebService.Options().Version))
 	})
 
 	return p.Bootloader.Boot(context.Background())

@@ -93,5 +93,5 @@ func DateFromTick(tick utee.Tick) Date {
 type DateLong string
 
 func (p DateLong) ToDate() Date {
-	return Date(strings.Replace(string(p), "-", "", -1))
+	return Date(strings.ReplaceAll(string(p), "-", ""))
 }

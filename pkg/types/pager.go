@@ -11,7 +11,7 @@ func (p Pager) Offset() int {
 }
 
 func (p Pager) End() int {
-	return (p.GetPage()) * p.GetLimit()
+	return p.GetPage() * p.GetLimit()
 }
 
 // GetPage 默认第1页
