@@ -33,6 +33,8 @@ func GuessContentType(originalName string) string {
 		contentType = "application/json"
 	case ".apk":
 		contentType = "application/vnd.android.package-archive"
+	case ".svg":
+		contentType = "image/svg+xml"
 	default:
 		contentType = "application/octet-stream"
 	}

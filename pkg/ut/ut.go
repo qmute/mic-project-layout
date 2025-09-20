@@ -5,11 +5,7 @@ import (
 )
 
 func IsMobile(s string) bool {
-	if len(s) != 11 {
-		return false
-	}
-
-	return true
+	return len(s) == 11
 }
 
 func IsURL(s string) bool {
