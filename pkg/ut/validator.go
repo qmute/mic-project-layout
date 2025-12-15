@@ -1,8 +1,8 @@
 package ut
 
 import (
+	"github.com/cockroachdb/errors"
 	"github.com/go-playground/validator/v10"
-	"github.com/pkg/errors"
 )
 
 func ValidStruct(obj interface{}) error {

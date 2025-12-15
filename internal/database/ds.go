@@ -9,7 +9,7 @@ import (
 	"github.com/sirupsen/logrus"
 	"gorm.io/gorm/logger"
 
-	"github.com/pkg/errors"
+	"github.com/cockroachdb/errors"
 	"github.com/qmute/dbc/gdb"
 	"gorm.io/gorm"
 	"gorm.io/gorm/schema"

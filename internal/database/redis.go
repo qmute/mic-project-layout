@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/pkg/errors"
+	"github.com/cockroachdb/errors"
 	"github.com/qmute/mic-project-layout/pkg/ut"
 	"github.com/quexer/utee"
 	"github.com/redis/go-redis/v9"

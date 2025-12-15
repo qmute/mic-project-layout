@@ -23,13 +23,8 @@ var _ = Describe("Pub", func() {
 		w := ut.Serve(router, r)
 		Ω(w).To(HaveHTTPStatus(200))
 		Ω(w.Body.String()).To(MatchJSON(`{
-          "id": 1,
-          "name": "a",
-          "mobile": "13088888888",
-          "status": 1,
-          "super": true,
-          "ct": 1
-        }`))
+        "message": "hello front"
+      }`))
 	})
 
 })

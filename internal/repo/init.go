@@ -3,7 +3,7 @@ package repo
 import (
 	"context"
 
-	"github.com/pkg/errors"
+	"github.com/cockroachdb/errors"
 	"gorm.io/gorm"
 )
 

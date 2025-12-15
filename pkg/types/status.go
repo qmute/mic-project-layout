@@ -1,6 +1,6 @@
 package types
 
-import "github.com/pkg/errors"
+import "github.com/cockroachdb/errors"
 
 const (
 	StatusUnknown  Status = iota // 未知

@@ -7,8 +7,8 @@ import (
 	"net/url"
 	"strings"
 
+	"github.com/cockroachdb/errors"
 	"github.com/gin-gonic/gin"
-	"github.com/pkg/errors"
 	"github.com/qmute/gi"
 	"github.com/qmute/mic-project-layout/internal/app/serve/admin"
 	"github.com/qmute/mic-project-layout/internal/app/serve/front"

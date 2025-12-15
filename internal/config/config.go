@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"os"
 
-	"github.com/pkg/errors"
+	"github.com/cockroachdb/errors"
 	"github.com/qmute/mic-project-layout/internal/database"
 	"github.com/qmute/mic-project-layout/pkg/ut"
 	"github.com/tidwall/jsonc"

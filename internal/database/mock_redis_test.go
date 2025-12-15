@@ -3,7 +3,7 @@ package database_test
 import (
 	"context"
 
-	"github.com/pkg/errors"
+	"github.com/cockroachdb/errors"
 	"github.com/qmute/mic-project-layout/internal/database"
 	"github.com/redis/go-redis/v9"
 
