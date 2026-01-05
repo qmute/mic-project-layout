@@ -51,6 +51,13 @@ func (p *Web) Mount(version string) *gin.Engine {
 	root.HEAD("/v", gi.HdlVersion(version))
 	root.GET("/v", gi.HdlVersion(version))
 
+	root.GET("/test/panic", func(c *gin.Context) {
+		log.Errorln("test panic alert")
+		c.JSON(http.StatusOK, gin.H{
+			"message": "hello test panic",
+		})
+	})
+
 	api := router.Group("/api")
 
 	// 用户
