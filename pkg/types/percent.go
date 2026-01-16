@@ -10,8 +10,8 @@ import (
 )
 
 const (
-	RawPercentUnit    = 10000
-	NewRawPercentUnit = 100
+	PercentUnit     = 10000 // 计算时的单位
+	ShowPercentUnit = 100   // 展示时的单位
 )
 
 // Percent 百分比，精确为小数点后最多两位
@@ -23,7 +23,7 @@ const (
 type Percent int
 
 func (p Percent) Fmt() string {
-	s := fmt.Sprintf("%.2f", float64(p)/RawPercentUnit)
+	s := fmt.Sprintf("%.2f", float64(p)/ShowPercentUnit)
 	return strings.TrimRight(strings.TrimRight(s, "0"), ".")
 }
 
@@ -32,7 +32,11 @@ func (p Percent) ToText() string {
 }
 
 func (p Percent) ToFloat() float64 {
-	return ut.Round(float64(p)/RawPercentUnit, 2)
+	return ut.Round(float64(p)/PercentUnit, 2)
+}
+
+func (p Percent) Int64() int64 {
+	return int64(p)
 }
 
 func ParsePercent(s string) (Percent, error) {
@@ -40,10 +44,12 @@ func ParsePercent(s string) (Percent, error) {
 	if err != nil {
 		return 0, errors.WithStack(err)
 	}
-	// 没有引用 consts 包的RMBUnit, 保持本包少依赖
+
 	return NewPercent(f), nil
 }
 
+// NewPercent 构建Percent对象
+// 例子： 50% = 5000
 func NewPercent(f float64) Percent {
-	return Percent(ut.Round(f*NewRawPercentUnit, 0))
+	return Percent(ut.Round(f*float64(ShowPercentUnit), 0))
 }
