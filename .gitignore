@@ -24,10 +24,15 @@ go.work.sum
 # env file
 .env
 
+# agent
+.omc
+
+# macOS
+.DS_Store
+
 # IDEA
 .idea
 .vscode
+.cursor
+.claude
 *.iml
-
-.DS_Store
-

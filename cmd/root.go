@@ -8,7 +8,7 @@ import (
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "jdw",
+	Use:   "mic-project-layout",
 	Short: "mic-project-layout root",
 	Long:  `mic-project-layout root`,
 	// Uncomment the following line if your bare application
